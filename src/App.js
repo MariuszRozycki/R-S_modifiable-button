@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <React.Fragment>
-      <Button label="Click me!" bgColor='alizarin' color='clouds' />
+      <Button icon="user" label="Click me!" bgColor='alizarin' color='clouds' />
     </React.Fragment>
   );
 }
