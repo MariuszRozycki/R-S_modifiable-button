@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-import Button from './Components/Button';
+import { Form, Button, Input } from './Components/Form/';
 import './App.css';
 
 function App() {
   return (
-    <React.Fragment>
-      <Button icon="user" label="Click me!" bgColor='alizarin' color='clouds' />
-    </React.Fragment>
+    <Fragment>
+      <Form>
+        <Button
+          label="Click me!"
+          bgColor='alizarin'
+          color='clouds'
+          icon="user" />
+        <Input
+          bgColor='clouds'
+          color='wetAsphalt'
+          borderSize={2}
+          borderRadius={5}
+          borderColor='midnightBlue'
+          marginLeft={10}
+          padding={5} />
+      </Form>
+
+    </Fragment>
   );
 }
 
