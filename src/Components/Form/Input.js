@@ -5,13 +5,14 @@ import Colors from "./Colors";
 function Input(props) {
 
   const {
-    bgColor = 'clouds',
-    color = 'wetAsphalt',
-    borderSize = 2,
-    borderRadius = 5,
-    borderColor = 'midnightBlue',
-    marginLeft = 10,
-    padding = 5
+    name,
+    bgColor,
+    color,
+    borderSize,
+    borderRadius,
+    borderColor,
+    padding,
+    margin
   } = props;
 
   const styles = {
@@ -20,22 +21,24 @@ function Input(props) {
     borderSize: borderSize,
     borderRadius: borderRadius,
     borderColor: borderColor,
-    marginLeft: marginLeft,
-    padding: padding
+    padding: padding,
+    margin: margin,
+    width: '100%'
   }
-  // const nameLabel = name[0].toUpperCase() + name.slice(1);
+  const nameLabel = name[0].toUpperCase() + name.slice(1);
   const [inputVal, setInputVal] = useState('');
 
   return (
     <Fragment>
-      <label>Name</label>
-      <input
-        style={styles}
-        type="text"
-        required
-        value={inputVal}
-        onChange={(e) => setInputVal(e.target.value)}
-      />
+      <label>{nameLabel}
+        <input
+          style={styles}
+          type="text"
+          required
+          value={inputVal}
+          onChange={(e) => setInputVal(e.target.value)}
+        />
+      </label>
     </Fragment>
   )
 }

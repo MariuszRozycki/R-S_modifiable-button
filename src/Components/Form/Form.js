@@ -1,8 +1,10 @@
 import React from "react";
 
+import './Style/Form.css';
+
 function Form({ children }) {
   return (
-    <form>
+    <form className="Form">
       {children}
     </form>
   )

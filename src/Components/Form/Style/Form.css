@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+.Form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  row-gap: 10px;
+}
