@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 import { Form, Button, Input, TextArea } from './Components/Form/';
+import { Card } from './Components/Card';
 import './App.css';
 
 function App() {
@@ -31,7 +32,16 @@ function App() {
         />
       </Form>
 
+
+      <Card
+        title="Shrimps and Chorizo Paella"
+        intro="This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."
+        showMore
+        content="Method: Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10 minutes...."
+      />
     </Fragment>
+
+
   );
 }
 

@@ -1,0 +1,32 @@
+.cardWrapper {
+  margin: 10px auto 20px;
+  width: 700px;
+  border: 2px solid red;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardWrapper nav {
+  flex-basis: 30%;
+}
+
+.cardWrapper ul {
+  padding: 15px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cardWrapper .ContentWrapper {
+  flex-basis: 70%;
+}
+
+.cardWrapper h1 {
+  margin: 0 auto;
+}
+
+.cardWrapper .imgPizza {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

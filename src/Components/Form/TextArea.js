@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 import Colors from "./Colors";
 
@@ -20,10 +20,18 @@ function TextArea(props) {
     padding: padding,
     width: '100%'
   }
+
+  const [textAreaVal, setTextAreaVal] = useState('Write down text');
+
   return (
     <Fragment>
       <label>
-        <textarea style={styles}></textarea>
+        <textarea
+          style={styles}
+          type="text"
+          required
+          value={textAreaVal}
+          onChange={(e) => setTextAreaVal(e.target.value)}></textarea>
       </label>
     </Fragment>
   )

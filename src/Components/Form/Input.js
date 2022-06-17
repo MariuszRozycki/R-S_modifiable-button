@@ -26,7 +26,7 @@ function Input(props) {
     width: '100%'
   }
   const nameLabel = name[0].toUpperCase() + name.slice(1);
-  const [inputVal, setInputVal] = useState('');
+  const [inputVal, setInputVal] = useState('Write down your name');
 
   return (
     <Fragment>
