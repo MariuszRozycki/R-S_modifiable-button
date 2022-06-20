@@ -8,7 +8,6 @@ export { default as Image } from './Image';
 export { default as Menu } from './Menu/Menu';
 export { default as MenuLink } from './Menu/MenuLink';
 export { default as ContentWrapper } from './ContentWrapper';
-export { default as Home } from './Menu/Home';
 export { default as About } from './Menu/About';
 export { default as Contact } from './Menu/Contact';
 export { default as Posts } from './Menu/Posts';
